@@ -12,7 +12,7 @@ inserirPessoa('Carlos Mirando')('Masculino')('Casado')(listaDoCarrinho.length)
 inserirPessoa('Elisabeti Sheila')('Feminino')('Solteiro')(listaDoCarrinho.length)
 inserirPessoa('Ana Maria')('Feminino')('Solteiro')(listaDoCarrinho.length)
 
-//listaDeCombinação:: Pessoa -> listaDePessoasCombinaveis -> 
+//listaDeCombinaÃ§Ã£o:: Pessoa -> listaDePessoasCombinaveis -> 
 
 //listaDeCombinacao:: ID -> combinar -> array
 //forma um novo array com todas as combinacoes possiveis retirando apenas o valor proprio
@@ -31,38 +31,6 @@ const listasCombinadas = listaDoCarrinho.map(pessoa =>
 console.log(listasCombinadas)
 console.log(listasCombinadas.map(array => array.combinacoesPossiveis.map(item => item)))
 const array = listasCombinadas[0].combinacoesPossiveis[0]
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//tentando juntar as listas
-//lista:: acao -> acessarArray -> pegarPrimeiroArray -> calcularNovoArrayComNumeroDePEssoas -> ArmazenarNaListaOriginal
-//listaOriginal:: acao -> pegarListaDeCombinacoes -> juntarUmaComOutra-> ListaCompleta
-/*
-const pegarPrimeiroArray = lista => 
-	lista.map(pessoa => pessoa.combinacoesPossiveis.map(combinacao => combinacao[0])
-const acessarArray = pegarPrimeiroArray(listaDoCarrinho)
-
-*/
 
 //pegar o maior valor do array -> somar com 1 -> criar um novo array
 const verificarMaiorArray = (min,cur) => {
